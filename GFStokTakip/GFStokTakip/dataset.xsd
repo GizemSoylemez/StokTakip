@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dataset" targetNamespace="http://tempuri.org/dataset.xsd" xmlns:mstns="http://tempuri.org/dataset.xsd" xmlns="http://tempuri.org/dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GFOtomasyonConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GFOtomasyonConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GFStokTakip.Properties.Settings.GlobalReference.Default.GFOtomasyonConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_UrunlerTableAdapter" GeneratorDataComponentClassName="VW_UrunlerTableAdapter" Name="VW_Urunler" UserDataComponentName="VW_UrunlerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GFOtomasyonConnectionString (Settings)" DbObjectName="GFOtomasyon.dbo.VW_Urunler" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TeminKodu, TeminAdi, UrunTuruKodu, UrunTuruAdi, UrunAdi, UrunAlisFiyat, UrunBarkod, UrunKodu, UrunTuruAciklama, UrunStokMiktari, UrunAlisTarihi, UrunTeminSubeAdi, UrunSaveUser, UrunSaveDate, MarkaAdi, MarkaKodu, UrunEditUser, UrunEditDate FROM dbo.VW_Urunler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TeminKodu" DataSetColumn="TeminKodu" />
+              <Mapping SourceColumn="TeminAdi" DataSetColumn="TeminAdi" />
+              <Mapping SourceColumn="UrunTuruKodu" DataSetColumn="UrunTuruKodu" />
+              <Mapping SourceColumn="UrunTuruAdi" DataSetColumn="UrunTuruAdi" />
+              <Mapping SourceColumn="UrunAdi" DataSetColumn="UrunAdi" />
+              <Mapping SourceColumn="UrunAlisFiyat" DataSetColumn="UrunAlisFiyat" />
+              <Mapping SourceColumn="UrunBarkod" DataSetColumn="UrunBarkod" />
+              <Mapping SourceColumn="UrunKodu" DataSetColumn="UrunKodu" />
+              <Mapping SourceColumn="UrunTuruAciklama" DataSetColumn="UrunTuruAciklama" />
+              <Mapping SourceColumn="UrunStokMiktari" DataSetColumn="UrunStokMiktari" />
+              <Mapping SourceColumn="UrunAlisTarihi" DataSetColumn="UrunAlisTarihi" />
+              <Mapping SourceColumn="UrunTeminSubeAdi" DataSetColumn="UrunTeminSubeAdi" />
+              <Mapping SourceColumn="UrunSaveUser" DataSetColumn="UrunSaveUser" />
+              <Mapping SourceColumn="UrunSaveDate" DataSetColumn="UrunSaveDate" />
+              <Mapping SourceColumn="MarkaAdi" DataSetColumn="MarkaAdi" />
+              <Mapping SourceColumn="MarkaKodu" DataSetColumn="MarkaKodu" />
+              <Mapping SourceColumn="UrunEditUser" DataSetColumn="UrunEditUser" />
+              <Mapping SourceColumn="UrunEditDate" DataSetColumn="UrunEditDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_Urunler1TableAdapter" GeneratorDataComponentClassName="VW_Urunler1TableAdapter" Name="VW_Urunler1" UserDataComponentName="VW_Urunler1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GFOtomasyonConnectionString (Settings)" DbObjectName="GFOtomasyon.dbo.VW_Urunler" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TeminKodu, TeminAdi, UrunTuruKodu, UrunTuruAdi, UrunAdi, UrunAlisFiyat, UrunBarkod, UrunKodu, UrunTuruAciklama, UrunStokMiktari, UrunAlisTarihi, UrunTeminSubeAdi, UrunSaveUser, UrunSaveDate, MarkaAdi, MarkaKodu, 
+                         UrunEditUser, UrunEditDate
+FROM            VW_Urunler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TeminKodu" DataSetColumn="TeminKodu" />
+              <Mapping SourceColumn="TeminAdi" DataSetColumn="TeminAdi" />
+              <Mapping SourceColumn="UrunTuruKodu" DataSetColumn="UrunTuruKodu" />
+              <Mapping SourceColumn="UrunTuruAdi" DataSetColumn="UrunTuruAdi" />
+              <Mapping SourceColumn="UrunAdi" DataSetColumn="UrunAdi" />
+              <Mapping SourceColumn="UrunAlisFiyat" DataSetColumn="UrunAlisFiyat" />
+              <Mapping SourceColumn="UrunBarkod" DataSetColumn="UrunBarkod" />
+              <Mapping SourceColumn="UrunKodu" DataSetColumn="UrunKodu" />
+              <Mapping SourceColumn="UrunTuruAciklama" DataSetColumn="UrunTuruAciklama" />
+              <Mapping SourceColumn="UrunStokMiktari" DataSetColumn="UrunStokMiktari" />
+              <Mapping SourceColumn="UrunAlisTarihi" DataSetColumn="UrunAlisTarihi" />
+              <Mapping SourceColumn="UrunTeminSubeAdi" DataSetColumn="UrunTeminSubeAdi" />
+              <Mapping SourceColumn="UrunSaveUser" DataSetColumn="UrunSaveUser" />
+              <Mapping SourceColumn="UrunSaveDate" DataSetColumn="UrunSaveDate" />
+              <Mapping SourceColumn="MarkaAdi" DataSetColumn="MarkaAdi" />
+              <Mapping SourceColumn="MarkaKodu" DataSetColumn="MarkaKodu" />
+              <Mapping SourceColumn="UrunEditUser" DataSetColumn="UrunEditUser" />
+              <Mapping SourceColumn="UrunEditDate" DataSetColumn="UrunEditDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dataset" msprop:Generator_UserDSName="dataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_Urunler" msprop:Generator_TableClassName="VW_UrunlerDataTable" msprop:Generator_TableVarName="tableVW_Urunler" msprop:Generator_TablePropName="VW_Urunler" msprop:Generator_RowDeletingName="VW_UrunlerRowDeleting" msprop:Generator_RowChangingName="VW_UrunlerRowChanging" msprop:Generator_RowEvHandlerName="VW_UrunlerRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_UrunlerRowDeleted" msprop:Generator_UserTableName="VW_Urunler" msprop:Generator_RowChangedName="VW_UrunlerRowChanged" msprop:Generator_RowEvArgName="VW_UrunlerRowChangeEvent" msprop:Generator_RowClassName="VW_UrunlerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TeminKodu" msprop:Generator_ColumnVarNameInTable="columnTeminKodu" msprop:Generator_ColumnPropNameInRow="TeminKodu" msprop:Generator_ColumnPropNameInTable="TeminKoduColumn" msprop:Generator_UserColumnName="TeminKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TeminAdi" msprop:Generator_ColumnVarNameInTable="columnTeminAdi" msprop:Generator_ColumnPropNameInRow="TeminAdi" msprop:Generator_ColumnPropNameInTable="TeminAdiColumn" msprop:Generator_UserColumnName="TeminAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunTuruKodu" msprop:Generator_ColumnVarNameInTable="columnUrunTuruKodu" msprop:Generator_ColumnPropNameInRow="UrunTuruKodu" msprop:Generator_ColumnPropNameInTable="UrunTuruKoduColumn" msprop:Generator_UserColumnName="UrunTuruKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunTuruAdi" msprop:Generator_ColumnVarNameInTable="columnUrunTuruAdi" msprop:Generator_ColumnPropNameInRow="UrunTuruAdi" msprop:Generator_ColumnPropNameInTable="UrunTuruAdiColumn" msprop:Generator_UserColumnName="UrunTuruAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunAdi" msprop:Generator_ColumnVarNameInTable="columnUrunAdi" msprop:Generator_ColumnPropNameInRow="UrunAdi" msprop:Generator_ColumnPropNameInTable="UrunAdiColumn" msprop:Generator_UserColumnName="UrunAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunAlisFiyat" msprop:Generator_ColumnVarNameInTable="columnUrunAlisFiyat" msprop:Generator_ColumnPropNameInRow="UrunAlisFiyat" msprop:Generator_ColumnPropNameInTable="UrunAlisFiyatColumn" msprop:Generator_UserColumnName="UrunAlisFiyat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UrunBarkod" msprop:Generator_ColumnVarNameInTable="columnUrunBarkod" msprop:Generator_ColumnPropNameInRow="UrunBarkod" msprop:Generator_ColumnPropNameInTable="UrunBarkodColumn" msprop:Generator_UserColumnName="UrunBarkod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunKodu" msprop:Generator_ColumnVarNameInTable="columnUrunKodu" msprop:Generator_ColumnPropNameInRow="UrunKodu" msprop:Generator_ColumnPropNameInTable="UrunKoduColumn" msprop:Generator_UserColumnName="UrunKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunTuruAciklama" msprop:Generator_ColumnVarNameInTable="columnUrunTuruAciklama" msprop:Generator_ColumnPropNameInRow="UrunTuruAciklama" msprop:Generator_ColumnPropNameInTable="UrunTuruAciklamaColumn" msprop:Generator_UserColumnName="UrunTuruAciklama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunStokMiktari" msprop:Generator_ColumnVarNameInTable="columnUrunStokMiktari" msprop:Generator_ColumnPropNameInRow="UrunStokMiktari" msprop:Generator_ColumnPropNameInTable="UrunStokMiktariColumn" msprop:Generator_UserColumnName="UrunStokMiktari" type="xs:int" minOccurs="0" />
+              <xs:element name="UrunAlisTarihi" msprop:Generator_ColumnVarNameInTable="columnUrunAlisTarihi" msprop:Generator_ColumnPropNameInRow="UrunAlisTarihi" msprop:Generator_ColumnPropNameInTable="UrunAlisTarihiColumn" msprop:Generator_UserColumnName="UrunAlisTarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UrunTeminSubeAdi" msprop:Generator_ColumnVarNameInTable="columnUrunTeminSubeAdi" msprop:Generator_ColumnPropNameInRow="UrunTeminSubeAdi" msprop:Generator_ColumnPropNameInTable="UrunTeminSubeAdiColumn" msprop:Generator_UserColumnName="UrunTeminSubeAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunSaveUser" msprop:Generator_ColumnVarNameInTable="columnUrunSaveUser" msprop:Generator_ColumnPropNameInRow="UrunSaveUser" msprop:Generator_ColumnPropNameInTable="UrunSaveUserColumn" msprop:Generator_UserColumnName="UrunSaveUser" type="xs:int" minOccurs="0" />
+              <xs:element name="UrunSaveDate" msprop:Generator_ColumnVarNameInTable="columnUrunSaveDate" msprop:Generator_ColumnPropNameInRow="UrunSaveDate" msprop:Generator_ColumnPropNameInTable="UrunSaveDateColumn" msprop:Generator_UserColumnName="UrunSaveDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MarkaAdi" msprop:Generator_ColumnVarNameInTable="columnMarkaAdi" msprop:Generator_ColumnPropNameInRow="MarkaAdi" msprop:Generator_ColumnPropNameInTable="MarkaAdiColumn" msprop:Generator_UserColumnName="MarkaAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MarkaKodu" msprop:Generator_ColumnVarNameInTable="columnMarkaKodu" msprop:Generator_ColumnPropNameInRow="MarkaKodu" msprop:Generator_ColumnPropNameInTable="MarkaKoduColumn" msprop:Generator_UserColumnName="MarkaKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunEditUser" msprop:Generator_ColumnVarNameInTable="columnUrunEditUser" msprop:Generator_ColumnPropNameInRow="UrunEditUser" msprop:Generator_ColumnPropNameInTable="UrunEditUserColumn" msprop:Generator_UserColumnName="UrunEditUser" type="xs:int" minOccurs="0" />
+              <xs:element name="UrunEditDate" msprop:Generator_ColumnVarNameInTable="columnUrunEditDate" msprop:Generator_ColumnPropNameInRow="UrunEditDate" msprop:Generator_ColumnPropNameInTable="UrunEditDateColumn" msprop:Generator_UserColumnName="UrunEditDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VW_Urunler1" msprop:Generator_TableClassName="VW_Urunler1DataTable" msprop:Generator_TableVarName="tableVW_Urunler1" msprop:Generator_TablePropName="VW_Urunler1" msprop:Generator_RowDeletingName="VW_Urunler1RowDeleting" msprop:Generator_RowChangingName="VW_Urunler1RowChanging" msprop:Generator_RowEvHandlerName="VW_Urunler1RowChangeEventHandler" msprop:Generator_RowDeletedName="VW_Urunler1RowDeleted" msprop:Generator_UserTableName="VW_Urunler1" msprop:Generator_RowChangedName="VW_Urunler1RowChanged" msprop:Generator_RowEvArgName="VW_Urunler1RowChangeEvent" msprop:Generator_RowClassName="VW_Urunler1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TeminKodu" msprop:Generator_ColumnVarNameInTable="columnTeminKodu" msprop:Generator_ColumnPropNameInRow="TeminKodu" msprop:Generator_ColumnPropNameInTable="TeminKoduColumn" msprop:Generator_UserColumnName="TeminKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TeminAdi" msprop:Generator_ColumnVarNameInTable="columnTeminAdi" msprop:Generator_ColumnPropNameInRow="TeminAdi" msprop:Generator_ColumnPropNameInTable="TeminAdiColumn" msprop:Generator_UserColumnName="TeminAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunTuruKodu" msprop:Generator_ColumnVarNameInTable="columnUrunTuruKodu" msprop:Generator_ColumnPropNameInRow="UrunTuruKodu" msprop:Generator_ColumnPropNameInTable="UrunTuruKoduColumn" msprop:Generator_UserColumnName="UrunTuruKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunTuruAdi" msprop:Generator_ColumnVarNameInTable="columnUrunTuruAdi" msprop:Generator_ColumnPropNameInRow="UrunTuruAdi" msprop:Generator_ColumnPropNameInTable="UrunTuruAdiColumn" msprop:Generator_UserColumnName="UrunTuruAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunAdi" msprop:Generator_ColumnVarNameInTable="columnUrunAdi" msprop:Generator_ColumnPropNameInRow="UrunAdi" msprop:Generator_ColumnPropNameInTable="UrunAdiColumn" msprop:Generator_UserColumnName="UrunAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunAlisFiyat" msprop:Generator_ColumnVarNameInTable="columnUrunAlisFiyat" msprop:Generator_ColumnPropNameInRow="UrunAlisFiyat" msprop:Generator_ColumnPropNameInTable="UrunAlisFiyatColumn" msprop:Generator_UserColumnName="UrunAlisFiyat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UrunBarkod" msprop:Generator_ColumnVarNameInTable="columnUrunBarkod" msprop:Generator_ColumnPropNameInRow="UrunBarkod" msprop:Generator_ColumnPropNameInTable="UrunBarkodColumn" msprop:Generator_UserColumnName="UrunBarkod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunKodu" msprop:Generator_ColumnVarNameInTable="columnUrunKodu" msprop:Generator_ColumnPropNameInRow="UrunKodu" msprop:Generator_ColumnPropNameInTable="UrunKoduColumn" msprop:Generator_UserColumnName="UrunKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunTuruAciklama" msprop:Generator_ColumnVarNameInTable="columnUrunTuruAciklama" msprop:Generator_ColumnPropNameInRow="UrunTuruAciklama" msprop:Generator_ColumnPropNameInTable="UrunTuruAciklamaColumn" msprop:Generator_UserColumnName="UrunTuruAciklama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunStokMiktari" msprop:Generator_ColumnVarNameInTable="columnUrunStokMiktari" msprop:Generator_ColumnPropNameInRow="UrunStokMiktari" msprop:Generator_ColumnPropNameInTable="UrunStokMiktariColumn" msprop:Generator_UserColumnName="UrunStokMiktari" type="xs:int" minOccurs="0" />
+              <xs:element name="UrunAlisTarihi" msprop:Generator_ColumnVarNameInTable="columnUrunAlisTarihi" msprop:Generator_ColumnPropNameInRow="UrunAlisTarihi" msprop:Generator_ColumnPropNameInTable="UrunAlisTarihiColumn" msprop:Generator_UserColumnName="UrunAlisTarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UrunTeminSubeAdi" msprop:Generator_ColumnVarNameInTable="columnUrunTeminSubeAdi" msprop:Generator_ColumnPropNameInRow="UrunTeminSubeAdi" msprop:Generator_ColumnPropNameInTable="UrunTeminSubeAdiColumn" msprop:Generator_UserColumnName="UrunTeminSubeAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunSaveUser" msprop:Generator_ColumnVarNameInTable="columnUrunSaveUser" msprop:Generator_ColumnPropNameInRow="UrunSaveUser" msprop:Generator_ColumnPropNameInTable="UrunSaveUserColumn" msprop:Generator_UserColumnName="UrunSaveUser" type="xs:int" minOccurs="0" />
+              <xs:element name="UrunSaveDate" msprop:Generator_ColumnVarNameInTable="columnUrunSaveDate" msprop:Generator_ColumnPropNameInRow="UrunSaveDate" msprop:Generator_ColumnPropNameInTable="UrunSaveDateColumn" msprop:Generator_UserColumnName="UrunSaveDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MarkaAdi" msprop:Generator_ColumnVarNameInTable="columnMarkaAdi" msprop:Generator_ColumnPropNameInRow="MarkaAdi" msprop:Generator_ColumnPropNameInTable="MarkaAdiColumn" msprop:Generator_UserColumnName="MarkaAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MarkaKodu" msprop:Generator_ColumnVarNameInTable="columnMarkaKodu" msprop:Generator_ColumnPropNameInRow="MarkaKodu" msprop:Generator_ColumnPropNameInTable="MarkaKoduColumn" msprop:Generator_UserColumnName="MarkaKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunEditUser" msprop:Generator_ColumnVarNameInTable="columnUrunEditUser" msprop:Generator_ColumnPropNameInRow="UrunEditUser" msprop:Generator_ColumnPropNameInTable="UrunEditUserColumn" msprop:Generator_UserColumnName="UrunEditUser" type="xs:int" minOccurs="0" />
+              <xs:element name="UrunEditDate" msprop:Generator_ColumnVarNameInTable="columnUrunEditDate" msprop:Generator_ColumnPropNameInRow="UrunEditDate" msprop:Generator_ColumnPropNameInTable="UrunEditDateColumn" msprop:Generator_UserColumnName="UrunEditDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

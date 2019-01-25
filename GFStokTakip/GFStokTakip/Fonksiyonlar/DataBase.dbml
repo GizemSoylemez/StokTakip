@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GFOtomasyon" Class="DataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-DNB97J7\SQLSERVER2017;Initial Catalog=GFOtomasyon;Integrated Security=True" SettingsObjectName="GFStokTakip.Properties.Settings" SettingsPropertyName="GFOtomasyonConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBL_UrunTuru" Member="TBL_UrunTurus">
+    <Type Name="TBL_UrunTuru">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UrunTuruKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="UrunTuruAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UrunTuruSaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UrunTuruSaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunTuruEditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UrunTuruEditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Temin" Member="TBL_Temins">
+    <Type Name="TBL_Temin">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TeminKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="TeminAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TeminSaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TeminSaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeminEditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TeminEditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_UrunMarka" Member="TBL_UrunMarkas">
+    <Type Name="TBL_UrunMarka">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MarkaAdi" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MarkaKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MarkaSaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MarkaSaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MarkaEditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MarkaEditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Urunler" Member="TBL_Urunlers">
+    <Type Name="TBL_Urunler">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UrunBarkod" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="UrunAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UrunAlisFiyat" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="UrunMarkaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunTuruID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunTeminID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunTuruAciklama" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UrunStokMiktari" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunAlisTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UrunTeminSubeAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UrunSaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunSaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UrunEditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunEditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Departmanlar" Member="TBL_Departmanlars">
+    <Type Name="TBL_Departmanlar">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DepartmanAdi" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DepartmanKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Zimmetler" Member="TBL_Zimmetlers">
+    <Type Name="TBL_Zimmetler">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ZimmetKodu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PersonelID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmanID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeslimTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Personeller" Member="TBL_Personellers">
+    <Type Name="TBL_Personeller">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PersonelKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PersonelAdiSoyadi" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="PersonelKullaniciAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PersonelSifre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PersonelRutbe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PersonelAktif" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SorumluOldDepartman" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DepartmanID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IseBaslangicTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AyrilmaTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sehir" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Ilce" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Telefon1" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Telefon2" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="WebAdres" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Mail" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastLogin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_ZimmetIadeNeden" Member="TBL_ZimmetIadeNedens">
+    <Type Name="TBL_ZimmetIadeNeden">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZimmetIadeKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="ZimmetIadeNeden" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="SaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VW_Urunler" Member="VW_Urunlers">
+    <Type Name="VW_Urunler">
+      <Column Name="TeminKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="TeminAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UrunTuruKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="UrunTuruAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UrunAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UrunAlisFiyat" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="UrunBarkod" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="UrunTuruAciklama" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UrunStokMiktari" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunAlisTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UrunTeminSubeAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UrunSaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunSaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MarkaAdi" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MarkaKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="UrunEditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunEditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VW_ZimmetListesi" Member="VW_ZimmetListesis">
+    <Type Name="VW_ZimmetListesi">
+      <Column Name="DepartmanAdi" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PersonelKodu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PersonelAdiSoyadi" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="PersonelRutbe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SorumluOldDepartman" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IseBaslangicTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Telefon1" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="UrunAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UrunAlisFiyat" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="TeslimTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ZimmetKodu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_ZimmetHata" Member="TBL_ZimmetHatas">
+    <Type Name="TBL_ZimmetHata">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ZimmetID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PersonelID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrunID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HataAciklama" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IadeTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ZimmetHataIadeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SaveUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
